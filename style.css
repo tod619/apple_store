@@ -84,7 +84,7 @@ html {
   width: 30rem;
   height: 55rem;
   transform-style: preserve-3d;
-  transform: rotateY(-91deg);
+  transform: rotateY(360deg);
 }
 
 .front-side,
@@ -94,6 +94,7 @@ html {
   background-color: #fee;
   position: absolute;
   transform-style: preserve-3d;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .front-side {
@@ -108,6 +109,7 @@ html {
   height: 10rem;
   background-color: #fee;
   position: absolute;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .front-side::before {
@@ -147,6 +149,7 @@ html {
   font-size: 2rem;
   font-weight: 300;
   color: #ec1919;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .back-side::before {
