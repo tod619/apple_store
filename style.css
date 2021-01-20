@@ -160,11 +160,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
 }
 
 .slideshow div.change {
   opacity: 1;
 }
 /* End: Slideshow */
+
 /* End: Section-1 Heading */
