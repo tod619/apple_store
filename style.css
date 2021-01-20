@@ -76,16 +76,24 @@ html {
 /* End: Navbar */
 
 /* Start: iPhone Cube */
+.cube-wrapper {
+  perspective: 100rem;
+}
+
 .cube {
   width: 30rem;
   height: 55rem;
   background-color: red;
+  transform-style: preserve-3d;
+  transform: rotateY(75deg);
 }
 
 .front-side {
   width: 100%;
   height: 100%;
   padding: 2.5rem;
+  background-color: #fee;
+  transform: translateZ(5rem);
 }
 
 .front-side img {
