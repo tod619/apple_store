@@ -14,6 +14,16 @@ document.querySelector('.bottom-x-control').addEventListener('click',
     cube.style.transform = `rotateX(${x-=20}deg)`
 })
 
+document.querySelector('.left-y-control').addEventListener('click',
+()=>{
+    cube.style.transform = `rotateY(${y+=20}deg)`
+})
+
+document.querySelector('.right-y-control').addEventListener('click',
+()=>{
+    cube.style.transform = `rotateY(${x-=20}deg)`
+})
+
 // Make Cube rotate on the Y axis
 const playPause = () => {
 
