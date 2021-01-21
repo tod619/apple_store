@@ -1,8 +1,10 @@
 // Start: iPhone Cube
 const cube = document.querySelector('.cube');
-let y = 0
-let x = 0
-let z = 0
+let y = 0;
+let x = 0;
+let z = 0;
+let bool = true;
+let interval;
 
 // iPhone Cube arrow controls
 document.querySelector('.top-x-control').addEventListener('click', () => {
@@ -32,18 +34,31 @@ document.querySelector('.bottom-z-control').addEventListener('click', () => {
 // Make Cube rotate on the Y axis
 const playPause = () => {
 
-    setInterval(()=>{
+    if(bool){
+       interval = setInterval(()=>{
 
-        cube.style.transform = `rotateY(${y++}deg)`
+        cube.style.transform = `rotateX(${x}deg) rotateY(${y++}deg) rotateZ(${z}deg)`
 
     },100)
+    } else {
+
+        clearInterval(interval)
+
+    }
 
 }
 
+playPause()
 
+document.querySelector('.controls').addEventListener('mouseover',()=> {
+    bool = false;
+    playPause()
+})
 
-
-//playPause()
+document.querySelector('.controls').addEventListener('mouseout',()=> {
+    bool = true;
+    playPause()
+})
 
 // End: iPhone Cube
 
