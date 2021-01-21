@@ -1,3 +1,28 @@
+// Start: iPhone Cube
+const cube = document.querySelector('.cube');
+let y = 0
+// Make Cube rotate on the Y axis
+const playPause = () => {
+
+    setInterval(()=>{
+
+        cube.style.transform = `rotateY(${y++}deg)`
+
+    },100)
+
+}
+
+
+playPause()
+
+// End: iPhone Cube
+
+
+
+
+
+
+
 // Start: Slideshow
 const slideshowDivs = () => {
     for(i = 1; i <= 5; i++) {
