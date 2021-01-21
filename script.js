@@ -1,6 +1,19 @@
 // Start: iPhone Cube
 const cube = document.querySelector('.cube');
 let y = 0
+let x = 0
+
+// iPhone Cube arrow controls
+document.querySelector('.top-x-control').addEventListener('click',
+()=>{
+    cube.style.transform = `rotateX(${x+=20}deg)`
+})
+
+document.querySelector('.bottom-x-control').addEventListener('click',
+()=>{
+    cube.style.transform = `rotateX(${x-=20}deg)`
+})
+
 // Make Cube rotate on the Y axis
 const playPause = () => {
 
@@ -13,7 +26,9 @@ const playPause = () => {
 }
 
 
-playPause()
+
+
+//playPause()
 
 // End: iPhone Cube
 
